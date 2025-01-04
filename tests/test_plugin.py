@@ -92,14 +92,16 @@ testdata = [
 
 
 @pytest.mark.parametrize("use_directory_urls", [False])
-@pytest.mark.parametrize(["old_page", "new_page", "expected", "_"], testdata)
-def test_relative_redirect_no_directory_urls(actual_redirect_target, expected, _):
+@pytest.mark.parametrize(("old_page", "new_page", "expected", "_"), testdata)
+@pytest.mark.usefixtures("_")
+def test_relative_redirect_no_directory_urls(actual_redirect_target, expected):
     assert actual_redirect_target == expected
 
 
 @pytest.mark.parametrize("use_directory_urls", [True])
-@pytest.mark.parametrize(["old_page", "new_page", "_", "expected"], testdata)
-def test_relative_redirect_directory_urls(actual_redirect_target, _, expected):
+@pytest.mark.parametrize(("old_page", "new_page", "_", "expected"), testdata)
+@pytest.mark.usefixtures("_")
+def test_relative_redirect_directory_urls(actual_redirect_target, expected):
     assert actual_redirect_target == expected
 
 
@@ -118,13 +120,15 @@ testdata = [
 
 @pytest.mark.parametrize("use_directory_urls", [False])
 @pytest.mark.parametrize("new_page", ["new.md"])
-@pytest.mark.parametrize(["old_page", "expected", "_"], testdata)
-def test_page_dest_path_no_directory_urls(actual_written_file, old_page, expected, _):
+@pytest.mark.parametrize(("old_page", "expected", "_"), testdata)
+@pytest.mark.usefixtures("_")
+def test_page_dest_path_no_directory_urls(actual_written_file, old_page, expected):
     assert actual_written_file == expected
 
 
 @pytest.mark.parametrize("use_directory_urls", [True])
 @pytest.mark.parametrize("new_page", ["new.md"])
-@pytest.mark.parametrize(["old_page", "_", "expected"], testdata)
-def test_page_dest_path_directory_urls(actual_written_file, old_page, _, expected):
+@pytest.mark.parametrize(("old_page", "_", "expected"), testdata)
+@pytest.mark.usefixtures("_")
+def test_page_dest_path_directory_urls(actual_written_file, old_page, expected):
     assert actual_written_file == expected
