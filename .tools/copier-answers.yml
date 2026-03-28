@@ -7,6 +7,6 @@ project_name: mkdocs-redirects
 pytest: true
 python_distribution_name: mkdocs-redirects
 python_source_path: mkdocs_redirects
-repository_name: mkdocs/mkdocs-redirects
+repository_name: ProperDocs/mkdocs-redirects
 script_test: false
 

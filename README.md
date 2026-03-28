@@ -5,8 +5,8 @@
 Initially developed by [DataRobot](https://www.datarobot.com/).
 
 [![PyPI](https://img.shields.io/pypi/v/mkdocs-redirects)](https://pypi.org/project/mkdocs-redirects/)
-[![License](https://img.shields.io/github/license/mkdocs/mkdocs-redirects)](https://github.com/mkdocs/mkdocs-redirects/blob/master/LICENSE.md)
-[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/mkdocs/mkdocs-redirects/ci.yml.svg)](https://github.com/mkdocs/mkdocs-redirects/actions?query=event%3Apush+branch%3Amaster)
+[![License](https://img.shields.io/github/license/ProperDocs/mkdocs-redirects)](https://github.com/ProperDocs/mkdocs-redirects/blob/master/LICENSE.md)
+[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/ProperDocs/mkdocs-redirects/ci.yml.svg)](https://github.com/ProperDocs/mkdocs-redirects/actions?query=event%3Apush+branch%3Amaster)
 
 ## Installing
 
