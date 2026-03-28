@@ -41,10 +41,10 @@ dependencies = [
 ]
 
 [project.urls]
-Documentation = "https://github.com/ProperDocs/properdocs-redirects#readme"
-Source = "https://github.com/ProperDocs/properdocs-redirects"
-Issues = "https://github.com/ProperDocs/properdocs-redirects/issues"
-History = "https://github.com/ProperDocs/properdocs-redirects/releases"
+Documentation = "https://github.com/ProperDocs/mkdocs-redirects#readme"
+Source = "https://github.com/ProperDocs/mkdocs-redirects"
+Issues = "https://github.com/ProperDocs/mkdocs-redirects/issues"
+History = "https://github.com/ProperDocs/mkdocs-redirects/releases"
 
 [project.entry-points."mkdocs.plugins"]
 redirects = "mkdocs_redirects.plugin:RedirectPlugin"
