@@ -5,6 +5,7 @@ All rights reserved.
 
 import logging
 import os
+import pathlib
 import posixpath
 
 from mkdocs import utils
@@ -56,8 +57,7 @@ def write_html(site_dir, old_path, new_path):
     # Write the HTML redirect file in place of the old file
     log.debug("Creating redirect: '%s' -> '%s'", old_path, new_path)
     content = HTML_TEMPLATE.format(url=new_path)
-    with open(old_path_abs, "w", encoding="utf-8") as f:
-        f.write(content)
+    pathlib.Path(old_path_abs).write_text(content, encoding="utf-8")
 
 
 def get_relative_html_path(old_page, new_page, use_directory_urls):
